@@ -1,0 +1,30 @@
+------------------------------
+* Sample compilation commands:
+------------------------------
+
+
+** To compile a benchmark with execution time reporting and generate the reference output of a benchmark:
+--------------------------------------------------------
+
+$> gcc -O0 -I include -DPOLYBENCH_TIME -DPOLYBENCH_DUMP_ARRAYS src/polybench.c src/2mm.c -o 2mm.serial -lm
+$> ./2mm.serial 2> 2mm.data.serial
+
+$> gcc -O0 -I include -DPOLYBENCH_TIME -DPOLYBENCH_DUMP_ARRAYS src/polybench.c src/correlation.c -o correlation.serial -lm
+$> ./correlation.serial 2> correlation.data.serial
+
+$> gcc -O0 -I include -DPOLYBENCH_TIME -DPOLYBENCH_DUMP_ARRAYS src/polybench.c src/reg_detect.c -o reg_detect.serial -lm
+$> ./reg_detect.serial 2> reg_detect.data.serial
+
+
+** To compile a benchmark with execution time reporting:
+--------------------------------------------------------
+
+$> gcc -O0 -I include -DPOLYBENCH_TIME src/polybench.c src/2mm.c -o 2mm.serial -lm
+$> ./2mm.serial
+
+$> gcc -O0 -I include -DPOLYBENCH_TIME src/polybench.c src/correlation.c -o correlation.serial -lm
+$> ./correlation.serial
+
+$> gcc -O0 -I include -DPOLYBENCH_TIME src/polybench.c src/reg_detect.c -o reg_detect.serial -lm
+$> ./reg_detect.serial
+

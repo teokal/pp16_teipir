@@ -80,13 +80,14 @@ void kernel_2mm(int ni, int nj, int nk, int nl,
 
 #pragma scop
   /* D := alpha*A*B*C + beta*D */
-
+  #pragma omp parallel for schedule(dynamic) shared(tmp) private(i,j)
   for (i = 0; i < _PB_NI; i++) {
     for (j = 0; j < _PB_NJ; j++) {
       tmp[i][j] = 0;
     }
   }
-
+  
+  #pragma omp parallel for schedule(dynamic) shared(tmp) private(i, j, k)
   for (i = 0; i < _PB_NI; i++) {
     for (j = 0; j < _PB_NJ; j++) {
       for (k = 0; k < _PB_NK; ++k) {
@@ -95,12 +96,14 @@ void kernel_2mm(int ni, int nj, int nk, int nl,
     }
   }
 
+  #pragma omp parallel for schedule(dynamic) shared(D) private(i,j)
   for (i = 0; i < _PB_NI; i++) {
     for (j = 0; j < _PB_NL; j++) {
       D[i][j] *= beta;
     }
   }
 
+  #pragma omp parallel for schedule(dynamic) shared(D) private(i, j, t)
   for (i = 0; i < _PB_NI; i++) {
     for (j = 0; j < _PB_NL; j++) {
       for (k = 0; k < _PB_NJ; ++k) {

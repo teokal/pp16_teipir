@@ -1,0 +1,41 @@
+
+#!/bin/bash
+echo "Compiling the original program - serial version"
+gcc -O0 -I include -DPOLYBENCH_TIME -DPOLYBENCH_DUMP_ARRAYS src/polybench.c src/correlation.c -o correlation.serial -lm
+echo "Running serial version: $(./correlation.serial 2> correlation.data.serial)"
+
+gcc -O0 -I include -DPOLYBENCH_TIME src/polybench.c src/correlation.c -o correlation.serial -lm
+echo "Running 5 times the original correlation program"
+for i in {1..5}
+do
+	echo "$i :$(./correlation.serial)"
+done
+
+echo "Compiling the parallelized version of program with -fopenmp flag"
+gcc -O0 -I include -DPOLYBENCH_TIME -DPOLYBENCH_DUMP_ARRAYS src/polybench.c src/correlation.c -o correlation.serial -lm -fopenmp
+echo "Running the parallelized program with DUMP ARRAY to get the output to later compare with the original"
+for i in {1,2,4,8}
+do
+	echo "Threads:	$i"
+	OMP_NUM_THREADS="$i" ./correlation.serial 2> correlation.data.serial.fopenmp"$i"
+
+done
+
+echo "Comparing output of threads with output from serial using diff command:"
+for i in {1,2,4,8}
+do
+	echo "Serial - OpenMP $i Thread"
+	diff correlation.data.serial correlation.data.serial.fopenmp"$i"
+done
+
+echo "Compile the parallelized version of program with -fopenmp flag"
+gcc -O0 -I include -DPOLYBENCH_TIME src/polybench.c src/correlation.c -o correlation.serial -lm -fopenmp
+echo "Running the parallelized program to get the execution time report"
+for i in {1,2,4,8}
+do
+	for j in {1..5}
+	do
+		echo "Thread:	$i | Loop: $j"
+		OMP_NUM_THREADS="$i" ./correlation.serial
+	done
+done

@@ -1,0 +1,245 @@
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	1
+Threads:	2
+Threads:	4
+Threads:	8
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	1
+84.407595
+Threads:	2
+46.039761
+Threads:	4
+38.094999
+Threads:	8
+38.073440
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	1
+144.863290
+Threads:	2
+72.269394
+Threads:	4
+37.641284
+Threads:	8
+38.068344
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	1
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	2
+72.353536
+Threads:	4
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	2
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	2
+75.018997
+Threads:	4
+36.910696
+Threads:	8
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	2
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	2
+4.090077
+Threads:	4
+9.783245
+Threads:	8
+10.266310
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	2
+3.907600
+Threads:	4
+9.781239
+Threads:	8
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	2
+3.329780
+Threads:	4
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	2
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	2
+0.000000
+Threads:	4
+0.000000
+Threads:	8
+0.000000
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	2
+0.012003
+Threads:	4
+0.009002
+Threads:	8
+0.009002
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	2
+0.020003
+Threads:	4
+0.022002
+Threads:	8
+0.025003
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	2
+0.015623
+Threads:	4
+0.009497
+Threads:	8
+0.015634
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	2
+0.015627
+Threads:	4
+0.017998
+Threads:	8
+0.017004
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	2
+0.014502
+Threads:	4
+0.008501
+Threads:	8
+0.009001
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	2
+0.348052
+Threads:	4
+0.639083
+Threads:	8
+0.647089
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	2
+0.000000
+Threads:	4
+0.000501
+Threads:	8
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	2
+0.212527
+Threads:	4
+0.552065
+Threads:	8
+0.611578
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	2
+0.262742
+Threads:	4
+0.498558
+Threads:	8
+0.335045
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	2
+Threads:	4
+Threads:	8
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	2
+Threads:	4
+0.006001
+Threads:	8
+0.005995
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	2
+Threads:	4
+Threads:	8
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	2
+0.015996
+Threads:	4
+0.011996
+Threads:	8
+0.082010
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	2
+Threads:	4
+Threads:	8
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	2
+0.103029
+Threads:	4
+0.206526
+Threads:	8
+0.180019
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	2
+Threads:	4
+Threads:	8
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	2
+0.113017
+Threads:	4
+0.189023
+Threads:	8
+0.182523
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	2
+0.015502
+Threads:	4
+0.012996
+Threads:	8
+0.069009
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	{1}
+0.019640
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+0.031251
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+0.017010
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+0.016514
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+0.015508
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	1
+0.016009
+Threads:	2
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	1
+128.277170
+Threads:	2
+128.064066
+Threads:	4
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	1
+128.181658
+Threads:	2
+128.382550
+Threads:	4
+128.197678
+Threads:	8

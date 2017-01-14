@@ -1,0 +1,134 @@
+C:\Users\serve\Downloads\pp16_teipir>bash
+server@DESKTOP-SVDO6KR:/mnt/c/Users/serve/Downloads/pp16_teipir$ ./script 2>> script.out
+Compiling the original program - serial version
+Running serial version: 104.388461
+Running 5 times the original 2mm program
+1 :104.172888
+2 :104.027808
+3 :104.574707
+4 :103.289675
+5 :103.957793
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:        1
+101.835981
+Threads:        2
+59.465055
+Threads:        4
+27.659017
+Threads:        8
+28.061571
+Comparing output of threads with output from serial using diff command:
+Serial - OpenMP 1 Thread
+Serial - OpenMP 2 Thread
+Serial - OpenMP 4 Thread
+Serial - OpenMP 8 Thread
+Compile the parallelized version of program with -fopenmp flag
+Running the parallelized program to get the execution time report
+Thread: 1 | Loop: 1
+102.113015
+Thread: 2 | Loop: 1
+53.803831
+Thread: 4 | Loop: 1
+39.474513
+Thread: 8 | Loop: 1
+27.182953
+Thread: 8 | Loop: 2
+28.459867
+Thread: 1 | Loop: 2
+101.275609
+Thread: 2 | Loop: 2
+52.423656
+Thread: 4 | Loop: 2
+37.586768
+Thread: 8 | Loop: 2
+29.375732
+Thread: 8 | Loop: 2
+28.451617
+Thread: 1 | Loop: 3
+101.537388
+Thread: 2 | Loop: 3
+52.220131
+Thread: 4 | Loop: 3
+38.585897
+Thread: 8 | Loop: 3
+28.645144
+Thread: 8 | Loop: 3
+28.864658
+Thread: 1 | Loop: 4
+101.628475
+Thread: 2 | Loop: 4
+57.287268
+Thread: 4 | Loop: 4
+38.181353
+Thread: 8 | Loop: 4
+27.282466
+Thread: 8 | Loop: 4
+28.395110
+server@DESKTOP-SVDO6KR:/mnt/c/Users/serve/Downloads/pp16_teipir$
+~~~~ NEW RUN ~~~~
+Compiling the original program - serial version
+Running serial version: 106.822097
+Running 5 times the original 2mm program
+1 :104.238843
+2 :105.006918
+3 :105.343362
+4 :106.743862
+5 :106.172919
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	1
+103.306102
+Threads:	2
+53.527683
+Threads:	4
+28.896177
+Threads:	8
+29.929816
+Comparing output of threads with output from serial using diff command:
+Serial - OpenMP 1 Thread
+Serial - OpenMP 2 Thread
+Serial - OpenMP 4 Thread
+Serial - OpenMP 8 Thread
+Compile the parallelized version of program with -fopenmp flag
+Running the parallelized program to get the execution time report
+Thread:	1 | Loop: 1
+103.745778
+Thread:	1 | Loop: 2
+102.477912
+Thread:	1 | Loop: 3
+101.134988
+Thread:	1 | Loop: 4
+100.662151
+Thread:	1 | Loop: 5
+102.870534
+Thread:	2 | Loop: 1
+53.247509
+Thread:	2 | Loop: 2
+53.360524
+Thread:	2 | Loop: 3
+53.315933
+Thread:	2 | Loop: 4
+63.796728
+Thread:	2 | Loop: 5
+53.232935
+Thread:	4 | Loop: 1
+30.931936
+Thread:	4 | Loop: 2
+27.925055
+Thread:	4 | Loop: 3
+29.165726
+Thread:	4 | Loop: 4
+28.667147
+Thread:	4 | Loop: 5
+27.899057
+Thread:	8 | Loop: 1
+28.580640
+Thread:	8 | Loop: 2
+28.960689
+Thread:	8 | Loop: 3
+28.712659
+Thread:	8 | Loop: 4
+28.633649
+Thread:	8 | Loop: 5
+28.802169

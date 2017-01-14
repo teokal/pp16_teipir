@@ -1,0 +1,11 @@
+Compiling the original program - serial version
+Running serial version: 83.766429
+Compiling the original program - serial version
+Running serial version: 0.112020
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	1
+1.185237
+Threads:	2
+3.917614
+Threads:	4

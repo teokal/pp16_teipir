@@ -1,5 +1,6 @@
 
 #!/bin/bash
+echo "~~~~ NEW RUN ~~~~"
 echo "Compiling the original program - serial version"
 gcc -O0 -I include -DPOLYBENCH_TIME -DPOLYBENCH_DUMP_ARRAYS src/polybench.c src/correlation.c -o correlation.serial -lm
 echo "Running serial version: $(./correlation.serial 2> correlation.data.serial)"

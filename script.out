@@ -1,0 +1,85 @@
+./script: γραμμή 39: μη αναμενόμενο EOF κατά την αναζήτηση «"»
+./script: γραμμή 43: syntax error: μη αναμενόμενο τέλος αρχείου
+./script: γραμμή 12: συντακτικό σφάλμα κοντά στο μη αναμενόμενο σύμβολο «done»
+./script: γραμμή 12: `done'
+./script: γραμμή 12: συντακτικό σφάλμα κοντά στο μη αναμενόμενο σύμβολο «done»
+./script: γραμμή 12: `done'
+./script: γραμμή 12: συντακτικό σφάλμα κοντά στο μη αναμενόμενο σύμβολο «done»
+./script: γραμμή 12: `done'
+./script: γραμμή 12: συντακτικό σφάλμα κοντά στο μη αναμενόμενο σύμβολο «done»
+./script: γραμμή 12: `done'
+./script: γραμμή 12: συντακτικό σφάλμα κοντά στο μη αναμενόμενο σύμβολο «done»
+./script: γραμμή 12: `done'
+./script: γραμμή 12: συντακτικό σφάλμα κοντά στο μη αναμενόμενο σύμβολο «done»
+./script: γραμμή 12: `done'
+
+
+
+C:\Users\serve\Downloads\pp16_teipir>bash
+server@DESKTOP-SVDO6KR:/mnt/c/Users/serve/Downloads/pp16_teipir$ ./script 2>> script.out
+Compiling the original program - serial version
+Running serial version: 104.388461
+Running 5 times the original 2mm program
+1 :104.172888
+2 :104.027808
+3 :104.574707
+4 :103.289675
+5 :103.957793
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:        1
+101.835981
+Threads:        2
+59.465055
+Threads:        4
+27.659017
+Threads:        8
+28.061571
+Comparing output of threads with output from serial using diff command:
+Serial - OpenMP 1 Thread
+Serial - OpenMP 2 Thread
+Serial - OpenMP 4 Thread
+Serial - OpenMP 8 Thread
+Compile the parallelized version of program with -fopenmp flag
+Running the parallelized program to get the execution time report
+Thread:  | Loop:
+102.113015
+Thread:  | Loop:
+53.803831
+Thread:  | Loop:
+39.474513
+Thread:  | Loop:
+27.182953
+Thread:  | Loop:
+28.459867
+Thread:  | Loop:
+101.275609
+Thread:  | Loop:
+52.423656
+Thread:  | Loop:
+37.586768
+Thread:  | Loop:
+29.375732
+Thread:  | Loop:
+28.451617
+Thread:  | Loop:
+101.537388
+Thread:  | Loop:
+52.220131
+Thread:  | Loop:
+38.585897
+Thread:  | Loop:
+28.645144
+Thread:  | Loop:
+28.864658
+Thread:  | Loop:
+101.628475
+Thread:  | Loop:
+57.287268
+Thread:  | Loop:
+38.181353
+Thread:  | Loop:
+27.282466
+Thread:  | Loop:
+28.395110
+server@DESKTOP-SVDO6KR:/mnt/c/Users/serve/Downloads/pp16_teipir$

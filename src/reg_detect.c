@@ -62,30 +62,28 @@ void kernel_reg_detect(int niter, int maxgrid, int length,
 		       DATA_TYPE POLYBENCH_2D(mean, MAXGRID, MAXGRID, maxgrid, maxgrid),
 		       DATA_TYPE POLYBENCH_2D(path, MAXGRID, MAXGRID, maxgrid, maxgrid))
 {
-	int i, j, cnt, sum;
+	int i, j, cnt;
 
 #pragma scop
+#pragma omp master
+{
 
-	#pragma omp parallel for schedule(dynamic) shared(i) private(cnt, sum)
+	#pragma omp for
 	for (i = 0; i <= _PB_MAXGRID - 1; i++) {
-		sum = 0;
-		for (cnt = 0; cnt <= _PB_LENGTH - 1; cnt++) {
-			sum += sum_tang[0][i];
-		}
-		path[0][i] = sum;
+		path[0][i] = sum_tang[0][i] * _PB_LENGTH;
 	}
 	
-	#pragma omp parallel for schedule(dynamic) shared(j) private(i, cnt, sum)
+	#pragma omp for private(i, cnt) collapse(2) schedule(static)
 	for (j = 1; j <= _PB_MAXGRID - 1; j++) {
 		for (i = j; i <= _PB_MAXGRID - 1; i++) {
-			sum = 0;
+			int sum = 0;
 			for (cnt = 0; cnt <= _PB_LENGTH - 1; cnt++) {
 				sum += sum_tang[j][i];
 			}
 			path[j][i] = path[j - 1][i - 1] + sum;
 		}
 	}
-
+}
 #pragma endscop
 
 }

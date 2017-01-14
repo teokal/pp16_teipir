@@ -1,0 +1,72 @@
+Compiling the original program - serial version
+Running serial version: 156.955048
+Running 5 times the original correlation program
+1 :156.350463
+2 :154.272740
+3 :156.680309
+~~~~ NEW RUN ~~~~
+Compiling the original program - serial version
+Running serial version: 397.864303
+Running 5 times the original correlation program
+1 :398.689236
+2 :397.718219
+3 :396.902631
+4 :396.989292
+5 :398.434960
+Compiling the parallelized version of program with -fopenmp flag
+Running the parallelized program with DUMP ARRAY to get the output to later compare with the original
+Threads:	1
+402.882800
+Threads:	2
+232.328682
+Threads:	4
+138.284592
+Threads:	8
+142.078580
+Comparing output of threads with output from serial using diff command:
+Serial - OpenMP 1 Thread
+Serial - OpenMP 2 Thread
+Serial - OpenMP 4 Thread
+Serial - OpenMP 8 Thread
+Compile the parallelized version of program with -fopenmp flag
+Running the parallelized program to get the execution time report
+Thread:	1 | Loop: 1
+401.979037
+Thread:	1 | Loop: 2
+401.032092
+Thread:	1 | Loop: 3
+401.387682
+Thread:	1 | Loop: 4
+401.997422
+Thread:	1 | Loop: 5
+400.787682
+Thread:	2 | Loop: 1
+233.707123
+Thread:	2 | Loop: 2
+234.136814
+Thread:	2 | Loop: 3
+235.710328
+Thread:	2 | Loop: 4
+235.859235
+Thread:	2 | Loop: 5
+235.248129
+Thread:	4 | Loop: 1
+138.181584
+Thread:	4 | Loop: 2
+138.434616
+Thread:	4 | Loop: 3
+139.629269
+Thread:	4 | Loop: 4
+140.916940
+Thread:	4 | Loop: 5
+138.970185
+Thread:	8 | Loop: 1
+142.885182
+Thread:	8 | Loop: 2
+141.868053
+Thread:	8 | Loop: 3
+141.361988
+Thread:	8 | Loop: 4
+141.325472
+Thread:	8 | Loop: 5
+143.452754

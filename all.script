@@ -1,0 +1,5 @@
+
+#!/bin/bash
+./2mm.script | tee -a 2mm.script.out
+./correlation.script | tee -a correlation.script.out
+./reg_detect.script | tee -a reg_detect.script.out
